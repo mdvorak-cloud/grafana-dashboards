@@ -1269,7 +1269,7 @@
       }
     }
   ],
-  "refresh": "10s",
+  "refresh": "5s",
   "schemaVersion": 26,
   "style": "dark",
   "tags": [],
@@ -1297,5 +1297,5 @@
   "timezone": "",
   "title": "Mikee-PC",
   "uid": "uWGwPs6Wz",
-  "version": 2
+  "version": 3
 }
