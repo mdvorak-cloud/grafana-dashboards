@@ -14,3 +14,7 @@ configMapGenerator:
     behavior: create
     files:
       - mikee-pc.json=dashboards/mikee-pc.json
+  - name: argocd-dashboard
+    behavior: create
+    files:
+      - argocd.json=dashboards/argocd.json
