@@ -18,3 +18,7 @@ configMapGenerator:
     behavior: create
     files:
       - argocd.json=dashboards/argocd.json
+  - name: kubernetes-dashboard
+    behavior: create
+    files:
+      - kubernetes.json=dashboards/kubernetes.json
