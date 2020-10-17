@@ -22,3 +22,7 @@ configMapGenerator:
     behavior: create
     files:
       - kubernetes.json=dashboards/kubernetes.json
+  - name: nginx-ingress-dashboard
+    behavior: create
+    files:
+      - nginx-ingress.json=dashboards/nginx-ingress.json
