@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1602597594084,
+  "iteration": 1603544483107,
   "links": [],
   "panels": [
     {
@@ -60,7 +60,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -210,7 +210,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -664,7 +664,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -808,7 +808,7 @@
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
-        "h": 7,
+        "h": 5,
         "w": 8,
         "x": 0,
         "y": 7
@@ -834,7 +834,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1241,7 +1241,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1546,7 +1546,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1744,7 +1744,7 @@
         "h": 6,
         "w": 8,
         "x": 0,
-        "y": 14
+        "y": 12
       },
       "hiddenSeries": false,
       "id": 20,
@@ -1765,7 +1765,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1900,7 +1900,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -2060,7 +2060,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -2221,7 +2221,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -2358,10 +2358,10 @@
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
-        "h": 7,
+        "h": 5,
         "w": 8,
         "x": 0,
-        "y": 20
+        "y": 18
       },
       "hiddenSeries": false,
       "id": 22,
@@ -2370,7 +2370,7 @@
         "current": false,
         "max": false,
         "min": false,
-        "show": true,
+        "show": false,
         "total": false,
         "values": false
       },
@@ -2381,7 +2381,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -2400,7 +2400,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "Temperature",
+      "title": "CPU Temperature",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -2436,6 +2436,69 @@
         "align": false,
         "alignLevel": null
       }
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "orange",
+                "value": 50
+              },
+              {
+                "color": "red",
+                "value": 70
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 8,
+        "x": 0,
+        "y": 23
+      },
+      "id": 24,
+      "options": {
+        "displayMode": "gradient",
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "max"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": false
+      },
+      "pluginVersion": "7.2.1",
+      "targets": [
+        {
+          "expr": "max(ilo_server_temperature_celsius{label!~\"02-.*|06-.*\"}) by (label,target,sensor)",
+          "instant": false,
+          "interval": "",
+          "legendFormat": "{{sensor}}",
+          "refId": "A"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "System Temperatures",
+      "type": "bargauge"
     }
   ],
   "refresh": "10s",
