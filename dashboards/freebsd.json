@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1603544483107,
+  "iteration": 1603547268990,
   "links": [],
   "panels": [
     {
@@ -93,7 +93,7 @@
             }
           ],
           "interval": "",
-          "legendFormat": "{{ instance }}",
+          "legendFormat": "{{ hostname }}{{ kubernetes_node }}",
           "measurement": "system",
           "orderByTime": "ASC",
           "policy": "default",
@@ -2550,5 +2550,5 @@
   "timezone": "",
   "title": "System",
   "uid": "hLgrq81Zk",
-  "version": 1
+  "version": 2
 }
