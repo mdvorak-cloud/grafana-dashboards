@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1603547268990,
+  "iteration": 1604500129124,
   "links": [],
   "panels": [
     {
@@ -2488,7 +2488,7 @@
       "pluginVersion": "7.2.1",
       "targets": [
         {
-          "expr": "max(ilo_server_temperature_celsius{label!~\"02-.*|06-.*\"}) by (label,target,sensor)",
+          "expr": "max(ilo_server_temperature_celsius{label!~\"06-.*\"}) by (label,target,sensor)",
           "instant": false,
           "interval": "",
           "legendFormat": "{{sensor}}",
@@ -2550,5 +2550,5 @@
   "timezone": "",
   "title": "System",
   "uid": "hLgrq81Zk",
-  "version": 2
+  "version": 1
 }
