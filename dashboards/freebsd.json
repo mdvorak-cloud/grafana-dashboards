@@ -226,7 +226,7 @@
       "targets": [
         {
           "alias": "$tag_interface.$col",
-          "expr": "irate(node_network_receive_bytes_total{device!~\"lo.*\"}[$__interval])",
+          "expr": "irate(node_network_receive_bytes_total{device!~\"lo.*|veth.*|vm-.*\",job=\"freebsd_node_exporter\"}[$__interval])",
           "groupBy": [
             {
               "params": [
@@ -314,7 +314,7 @@
         },
         {
           "alias": "$tag_interface.$col",
-          "expr": "irate(node_network_transmit_bytes_total{device!~\"lo.*\"}[$__interval])",
+          "expr": "irate(node_network_transmit_bytes_total{device!~\"lo.*|veth.*|vm-.*\",job=\"freebsd_node_exporter\"}[$__interval])",
           "groupBy": [
             {
               "params": [
@@ -402,7 +402,7 @@
         },
         {
           "alias": "$tag_interface.$col",
-          "expr": "irate(node_network_receive_errs_total{device!~\"lo.*\"}[$__interval])",
+          "expr": "irate(node_network_receive_errs_total{device!~\"lo.*|veth.*|vm-.*\",job=\"freebsd_node_exporter\"}[$__interval])",
           "groupBy": [
             {
               "params": [
@@ -490,7 +490,7 @@
         },
         {
           "alias": "$tag_interface.$col",
-          "expr": "irate(node_network_receive_drop_total{device!~\"lo.*\"}[$__interval])",
+          "expr": "irate(node_network_receive_drop_total{device!~\"lo.*|veth.*|vm-.*\",job=\"freebsd_node_exporter\"}[$__interval])",
           "groupBy": [
             {
               "params": [
