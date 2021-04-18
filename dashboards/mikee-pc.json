@@ -658,7 +658,7 @@
       "fillGradient": 1,
       "gridPos": {
         "h": 6,
-        "w": 12,
+        "w": 14,
         "x": 0,
         "y": 6
       },
@@ -768,7 +768,7 @@
       "gridPos": {
         "h": 6,
         "w": 5,
-        "x": 12,
+        "x": 14,
         "y": 6
       },
       "hiddenSeries": false,
@@ -876,7 +876,7 @@
       "fillGradient": 1,
       "gridPos": {
         "h": 8,
-        "w": 12,
+        "w": 14,
         "x": 0,
         "y": 12
       },
@@ -1019,7 +1019,7 @@
       "gridPos": {
         "h": 10,
         "w": 5,
-        "x": 12,
+        "x": 14,
         "y": 12
       },
       "id": 21,
@@ -1121,7 +1121,7 @@
       "fillGradient": 1,
       "gridPos": {
         "h": 5,
-        "w": 12,
+        "w": 14,
         "x": 0,
         "y": 20
       },
@@ -1229,7 +1229,7 @@
       "fillGradient": 1,
       "gridPos": {
         "h": 6,
-        "w": 12,
+        "w": 14,
         "x": 0,
         "y": 25
       },
@@ -1350,5 +1350,5 @@
   "timezone": "",
   "title": "Mikee-PC",
   "uid": "uWGwPs6Wz",
-  "version": 3
+  "version": 4
 }
