@@ -21,6 +21,57 @@
       "datasource": null,
       "fieldConfig": {
         "defaults": {
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 25,
+      "options": {
+        "content": "# AMD Ryzen 9 3900X ~ 4250 Mhz / NVIDIA GeForce GTX 1070",
+        "mode": "markdown"
+      },
+      "pluginVersion": "7.1.0",
+      "targets": [
+        {
+          "expr": "ohm_cpu_celsius{hardware=\"AMD Ryzen 9 3900X\"}",
+          "interval": "",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
           "custom": {},
           "mappings": [],
           "max": 100,
@@ -50,7 +101,7 @@
         "h": 4,
         "w": 2,
         "x": 0,
-        "y": 0
+        "y": 2
       },
       "id": 8,
       "interval": "5s",
@@ -111,7 +162,7 @@
         "h": 4,
         "w": 2,
         "x": 2,
-        "y": 0
+        "y": 2
       },
       "id": 14,
       "interval": "5s",
@@ -173,7 +224,7 @@
         "h": 4,
         "w": 2,
         "x": 4,
-        "y": 0
+        "y": 2
       },
       "id": 16,
       "interval": "5s",
@@ -235,7 +286,7 @@
         "h": 4,
         "w": 2,
         "x": 6,
-        "y": 0
+        "y": 2
       },
       "id": 10,
       "interval": "5s",
@@ -296,7 +347,7 @@
         "h": 4,
         "w": 2,
         "x": 8,
-        "y": 0
+        "y": 2
       },
       "id": 15,
       "interval": "5s",
@@ -357,7 +408,7 @@
         "h": 4,
         "w": 2,
         "x": 10,
-        "y": 0
+        "y": 2
       },
       "id": 18,
       "interval": "5s",
@@ -419,7 +470,7 @@
         "h": 4,
         "w": 2,
         "x": 12,
-        "y": 0
+        "y": 2
       },
       "id": 9,
       "interval": "5s",
@@ -471,7 +522,7 @@
         "h": 4,
         "w": 8,
         "x": 14,
-        "y": 0
+        "y": 2
       },
       "id": 13,
       "interval": "5s",
@@ -554,7 +605,7 @@
         "h": 4,
         "w": 2,
         "x": 22,
-        "y": 0
+        "y": 2
       },
       "id": 11,
       "interval": "1m",
@@ -609,7 +660,7 @@
         "h": 6,
         "w": 12,
         "x": 0,
-        "y": 4
+        "y": 6
       },
       "hiddenSeries": false,
       "id": 20,
@@ -718,7 +769,7 @@
         "h": 6,
         "w": 5,
         "x": 12,
-        "y": 4
+        "y": 6
       },
       "hiddenSeries": false,
       "id": 23,
@@ -827,7 +878,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 10
+        "y": 12
       },
       "hiddenSeries": false,
       "id": 2,
@@ -969,7 +1020,7 @@
         "h": 10,
         "w": 5,
         "x": 12,
-        "y": 10
+        "y": 12
       },
       "id": 21,
       "interval": "5s",
@@ -1072,7 +1123,7 @@
         "h": 5,
         "w": 12,
         "x": 0,
-        "y": 18
+        "y": 20
       },
       "hiddenSeries": false,
       "id": 6,
@@ -1180,7 +1231,7 @@
         "h": 6,
         "w": 12,
         "x": 0,
-        "y": 23
+        "y": 25
       },
       "hiddenSeries": false,
       "id": 4,
@@ -1299,5 +1350,5 @@
   "timezone": "",
   "title": "Mikee-PC",
   "uid": "uWGwPs6Wz",
-  "version": 2
+  "version": 3
 }
