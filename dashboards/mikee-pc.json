@@ -512,7 +512,7 @@
           "refId": "B"
         },
         {
-          "expr": "rate(esp_rpm_total{sensor=~\"Fan|Fan 1\",hardware=\"Radiator\"}[10s])*15",
+          "expr": "esp_rpm{hardware=\"Radiator\"}",
           "interval": "",
           "legendFormat": "{{hardware}} {{sensor}}",
           "refId": "E"
@@ -1299,5 +1299,5 @@
   "timezone": "",
   "title": "Mikee-PC",
   "uid": "uWGwPs6Wz",
-  "version": 1
+  "version": 2
 }
