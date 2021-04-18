@@ -66,7 +66,7 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": false
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "targets": [
         {
           "expr": "ohm_cpu_load_percent{sensor=\"CPU Total\"}",
@@ -127,7 +127,7 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": false
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "targets": [
         {
           "expr": "ohm_cpu_watts{sensor=\"Package Power\"}",
@@ -189,7 +189,7 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": false
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "targets": [
         {
           "expr": "ohm_cpu_celsius{sensor=\"Core (Tctl/Tdie)\"}",
@@ -251,7 +251,7 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": false
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "targets": [
         {
           "expr": "ohm_gpunvidia_load_percent{sensor=\"GPU Core\"}",
@@ -312,7 +312,7 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": false
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "targets": [
         {
           "expr": "ohm_gpunvidia_watts",
@@ -373,7 +373,7 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": false
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "targets": [
         {
           "expr": "ohm_gpunvidia_celsius",
@@ -435,7 +435,7 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": false
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "targets": [
         {
           "expr": "esp_celsius{sensor=\"Water Outlet\"}",
@@ -489,7 +489,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "targets": [
         {
           "expr": "ohm_superio_revolutions_per_minute{sensor=\"Fan #1\"}",
@@ -512,7 +512,7 @@
           "refId": "B"
         },
         {
-          "expr": "rate(esp_rpm_total{sensor=\"Fan 1\",hardware=\"Radiator\"}[10s])*15",
+          "expr": "rate(esp_rpm_total{sensor=~\"Fan|Fan 1\",hardware=\"Radiator\"}[10s])*15",
           "interval": "",
           "legendFormat": "{{hardware}} {{sensor}}",
           "refId": "E"
@@ -570,7 +570,7 @@
         },
         "showUnfilled": true
       },
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "targets": [
         {
           "expr": "ohm_hdd_load_percent{sensor=\"Used Space\",hardware=\"XPG GAMMIX S11 Pro\"}",
@@ -630,7 +630,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -741,7 +741,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -850,7 +850,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1093,7 +1093,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1201,7 +1201,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.0",
+      "pluginVersion": "7.2.1",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1299,5 +1299,5 @@
   "timezone": "",
   "title": "Mikee-PC",
   "uid": "uWGwPs6Wz",
-  "version": 3
+  "version": 1
 }
