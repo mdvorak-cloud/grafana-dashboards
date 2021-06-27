@@ -912,11 +912,13 @@
       "targets": [
         {
           "expr": "max_over_time(ohm_cpu_celsius{sensor=\"Core (Tctl/Tdie)\"}[$__interval])",
+          "interval": "",
           "legendFormat": "{{hardware}} ",
           "refId": "A"
         },
         {
           "expr": "max_over_time(ohm_gpunvidia_celsius[$__interval])",
+          "interval": "",
           "legendFormat": "{{hardware}}",
           "refId": "C"
         },
@@ -936,17 +938,20 @@
           "refId": "F"
         },
         {
-          "expr": "max_over_time(esp_celsius{sensor!=\"ESP32\"}[$__interval])",
+          "expr": "max_over_time(esp_celsius{sensor!=\"ESP32\",component=\"radiator\"}[$__interval])",
+          "interval": "",
           "legendFormat": "{{hardware}} - {{sensor}}",
           "refId": "B"
         },
         {
-          "expr": "min_over_time(esp_celsius{sensor=\"Water Inlet\"}[$__interval]) - ignoring(sensor,address) max_over_time(esp_celsius{sensor=\"Water Outlet\"}[$__interval])",
+          "expr": "min_over_time(esp_celsius{sensor=\"Water Inlet\",component=\"radiator\"}[$__interval]) - ignoring(sensor,address) max_over_time(esp_celsius{sensor=\"Water Outlet\",component=\"radiator\"}[$__interval])",
+          "interval": "",
           "legendFormat": "{{hardware}} - Delta",
           "refId": "G"
         },
         {
-          "expr": "min_over_time(esp_celsius{sensor=\"Water Outlet\"}[$__interval]) - ignoring(sensor,address) max_over_time(esp_celsius{sensor=\"Ambient\"}[$__interval])",
+          "expr": "min_over_time(esp_celsius{sensor=\"Water Outlet\",component=\"radiator\"}[$__interval]) - ignoring(sensor,address) max_over_time(esp_celsius{sensor=\"Ambient\",component=\"radiator\"}[$__interval])",
+          "interval": "",
           "legendFormat": "{{hardware}} - Above",
           "refId": "H"
         }
@@ -971,6 +976,7 @@
       },
       "yaxes": [
         {
+          "$$hashKey": "object:462",
           "decimals": 1,
           "format": "short",
           "label": "°C",
@@ -980,6 +986,7 @@
           "show": true
         },
         {
+          "$$hashKey": "object:463",
           "format": "short",
           "label": "",
           "logBase": 1,
@@ -1330,7 +1337,7 @@
     "list": []
   },
   "time": {
-    "from": "now-15m",
+    "from": "now-30m",
     "to": "now"
   },
   "timepicker": {
@@ -1350,5 +1357,5 @@
   "timezone": "",
   "title": "Mikee-PC",
   "uid": "uWGwPs6Wz",
-  "version": 4
+  "version": 1
 }
